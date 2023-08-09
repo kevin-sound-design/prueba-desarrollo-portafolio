@@ -1,4 +1,11 @@
-header ul{
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: rgb(30, 84, 201);
+    color: white;
+}
+
+footer ul{
 
     list-style: none;
 }
@@ -8,11 +15,11 @@ header img{
 
     width: 400px;
     margin-top: 30px;
-    margin-left: 20px;
+    
 
 }
 
-header ul img{
+footer ul img{
 
     width: 200px;
     margin: 0;
@@ -22,7 +29,7 @@ header ul img{
     
 }
 
-header ul{
+footer ul{
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -33,9 +40,7 @@ header ul{
 
 header{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin-right: 40px;
+    
 }
 
 
