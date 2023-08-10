@@ -1,12 +1,54 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    background-color: rgb(30, 84, 201);
+    
+    
+}
+
+nav{
+    background-color: aqua;
+    height: 75px;
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+.toggle{
     color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin:0px;
+    height: 100%;
+    align-items: center;
+}
+
+@media (max-width:750px){
+    
+}
+
+nav li:hover{
+    transform: scale(1.2);
+    transition: all 0,3s;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: brown;
 }
 
 footer ul{
-
     list-style: none;
 }
 
@@ -15,42 +57,99 @@ header img{
 
     width: 400px;
     margin-top: 30px;
+    border-radius: 2rem;
     
-
 }
 
 footer ul img{
 
     width: 200px;
     margin: 0;
-    padding: 0;
-    
-
-    
+    padding: 0; 
 }
 
 footer ul{
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    
-    
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+footer li:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+
+}
+
+footer{
+    text-align: center;
+    font-size: 30px;
 }
 
 header{
+   display: flex;
+   justify-content: space-evenly; 
+}
+
+.foto-presentacion{
     text-align: center;
-    
+    margin-right: 20px;
 }
 
 
 .container{
     display: flex;
-    flex-wrap: wrap;    
+    flex-direction: column;
+       
 }
 
 .educacion{
     margin-top: 30px;
-    
+    border: solid;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(255,128,255, 0.4);
 
 }
+
+.experiencia{
+    margin: 20px;
+}
+
+.datos-experiencia p{
+    border: solid;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(255,128,255, 0.4);
+    padding: 1rem;
+}
+
+.datos-experiencia{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+@media (min-width:1477px){
+    .datos-experiencia{
+        grid-template-columns: repeat(4, minmax(17rem, 1fr));
+
+    }
+}
+
+@media (max-width:900px){
+    header{
+        flex-wrap: wrap;
+    }
+
+    .foto-presentacion{
+        margin-left: 40px;
+    }
+
+    footer ul{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+}
+
